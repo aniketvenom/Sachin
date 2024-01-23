@@ -6,17 +6,17 @@ public class ReverseString {
 		String reverse1="",reverse2="";
 		
 		String[] s2 = s1.split(" ");
-		
-		System.out.println(s2.length);
-		
-		for(int i=s2.length-1;i>=0;i--)
+
+		//first reverse
+	        for(int i=s2.length-1;i>=0;i--)
 		{
 		
 			reverse1 = reverse1 + s2[i] + " " ;
 		}
 		
 		System.out.println(reverse1);
-		
+
+		//second reverse
 		for(int i=s2.length-1;i>=0;i--)
 		{
 			for(int j=s2[i].length()-1;j>=0;j--)
